@@ -19,7 +19,7 @@ def another_is_triangle_method args
   array = args
   max = array.sort!.pop
   unless max <= array[0] + array[1]
-    raise TriangleError "This is not a triangle"
+    raise TriangleError, "This is not a triangle"
   else
     puts "Congratulations, you have found a triangle!"
   end
